@@ -1,0 +1,131 @@
+html, body{ 
+	margin:0; 
+	padding:0; 
+} 
+
+body 			{ color: #333; font: 12px Helvetica, Arial, sans-serif; line-height: 18px; }
+
+h2				{ color: #333; }
+
+a				{ color: #337810; }
+
+p				{ margin: 0 0 18px; }
+
+#wrapper		{ float: left; width: 100%; }
+
+#pagewidth{ }
+
+#header{
+	position:relative; 
+	/*height:200px; */
+	background-color:#E3E3E3; 
+	width:100%;
+	/*display:block;*/
+	overflow:auto;
+	background: #eee;
+	border-bottom: 2px solid #ddd;
+}
+
+#header h1  	{ color: #004b6f; margin: 0 0 3px; padding: 24px 18px 0; }
+
+#header p		{ color: #666; font-size: 11px; font-weight: bold; padding: 0 18px; }
+
+#navigation{
+	width:10%; 
+	float:left; 
+	position:relative; 
+	background-color:#FFFFC0; 
+}
+
+#twocols{
+	width:90%; 
+	float:right; 
+	position:relative; 
+}
+
+#rightcol{
+	width:13%; 
+	float:right; 
+	position:relative; 
+	background-color:#FFFFE0;
+}
+
+#maincol{
+	background-color: #FFFFFF;  
+	float: left; 
+	position: relative; 
+	width:87%; 
+}
+
+#footer{
+	height:5em; 
+	background: #333; 
+	clear:both;
+	display:block;
+	overflow:auto;
+	border-bottom: 2px solid #999;
+	width: 100%;
+}
+
+#footer a		{ color: #eee; }
+#footer	p		{ color: #ccc; margin: 0; padding: 0 18px 10px; }
+#footer ul		{ border-bottom: 1px solid #555; list-style: none; margin: 0 18px 6px; padding: 10px 0 6px; }
+#footer li		{ display: inline; font-size: 11px; font-weight: bold; padding-right: 5px; }
+
+/* Content Style */
+#navigation		{ border-bottom: 1px solid #ccc; padding-left: 18px; }
+#navigation ul	{ padding: 0 18px 9px; }
+#extra {
+	border-bottom: 1px solid #ccc; 
+	padding-right: 18px; 
+	background-color:#FFFFC0; 
+}
+#extra small	{ font-size: 11px; line-height: 18px; }
+#content p, #extra p { padding-right: 18px; }
+
+/* Content Positioning and Size */
+#navigation		{ float: left; width: 182px; margin-left: -100%; }
+#content		{ margin: 0 225px 36px; }
+#extra			{ float: left; margin-left: -200px; width: 182px; }		/* Footer */
+#footer			{ background: #333; border-bottom: 2px solid #999; clear: left; width: 100%; }
+#footer a		{ color: #eee; }
+#footer	p		{ color: #ccc; margin: 0; padding: 0 18px 10px; }
+#footer ul		{ border-bottom: 1px solid #555; list-style: none; margin: 0 18px 6px; padding: 10px 0 6px; }
+#footer li		{ display: inline; font-size: 11px; font-weight: bold; padding-right: 5px; }
+
+<!--[if IE]>
+    #navigation, #content, #extra { margin-top: 20px; }
+<![endif]-->
+
+
+/* ******************************************************************** */ 
+/* Clearfix: http://csscreator.com/attributes/containedfloat.php        */
+/* ******************************************************************** */
+.clearfix:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}
+
+.clearfix{display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+.clearfix{display: block;}
+/* End hide from IE-mac */  
+
+
+/* ******************************************************************** */ 
+/*                      printer styles                                  */ 
+/* ******************************************************************** */ 
+
+@media print{ 
+	/*hide the left column when printing*/ 
+	#navigation{display:none;} 
+
+	/*hide the right column when printing*/ 
+	#rightcol{display:none;} 
+	#twocols, #maincol{width:100%; float:none;}
+}
