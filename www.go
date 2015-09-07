@@ -116,7 +116,7 @@ const ih2 = `!</h1>
 		<div id="extra">
 			<h2>Contact Information</h2>
 			<p>David Skinner<br>
-			670 S6th St Ste 16<br>
+			650 S5th St Apt 88<br>
 			Arkadelphia  AR   71923-6242</p>
 			<p>text: <em>501-201-0414</em></p>
 			<p>email: 
